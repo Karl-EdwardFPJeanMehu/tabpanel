@@ -68,7 +68,7 @@ TabPanel will automatically place tabs according to the same order in which `Pan
 
 > **Note :** Notice there is a third object in *myMenu*. This can be a way to use tabs exclusively to invoke arbitrary functions. If a menu's *onClick* function returns false, that tab and its corresponding *Panel* will not be made active. Only tabs will ever invoke menu *onClick* functions.
 
-2. `reverse` - `bool` (optional): Positions the tabs at the bottom rather than the top if set to `true`. Default is `false`.
+2. `reverse` - `bool` (optional): This is the same as the *column-reverse* or *row-reverse* values of the *flex-direction* css property. Positions the group of tabs and content in reverse order. Default is `false`.
 
 3. `square` - `bool` (optional): gives a *TabPanel* or *Panel* square borders if set to true. Default is `false`. 
 
@@ -188,3 +188,5 @@ This can be quite tedious if you have many tabs and panels. You can do something
     );
   }
 ```
+
+6. `menuOrientation` - `enum('column', 'row)'` (optional): This is the same as the *flex-direction* css property. It positions the group of tabs and content either horizontally with **column** (default) or vertically with **row**.
